@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Shore Side BnB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Shore Side</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="menu.html">Breakfast</a></li>
+                <li><a href="attractions.html">Local Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-now.html">Book Now</a></li> <!-- Add the new booking page link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <h2>Book Your Stay at Shore Side BnB</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="checkIn">Check-in Date:</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+            </div>
+            <div class="form-group">
+                <label for="checkOut">Check-out Date:</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Standard Room">Standard Room</option>
+                    <option value="Suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit Booking Request</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Shore Side BnB | Tampa, Florida</p>
+    </footer>
+</body>
+</html>
